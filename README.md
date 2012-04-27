@@ -1,10 +1,12 @@
-Delight
+Delight IO
 =========================
 
 Basic Setup
 -----------
 
-1. Add Delight.framework to your target. Also make sure the following frameworks are linked:
+1. Sign up on [htpp://delight.io](http://delight.io) to receive your app token
+
+2. Add Delight.framework to your target. Also make sure the following frameworks are linked:
     * AVFoundation
     * CoreGraphics
     * CoreMedia
@@ -13,9 +15,9 @@ Basic Setup
     * QuartzCore
     * SystemConfiguration
 
-2. In your build settings, add `-ObjC` to "Other Linker Flags".
+3. In your build settings, add `-ObjC` to "Other Linker Flags".
 
-3. In your application delegate, `#import <Delight/Delight.h>`. In `applicationDidFinishLaunching:withOptions:`, call `[Delight startWithAppToken:]`.
+4. In your application delegate, `#import <Delight/Delight.h>`. In `applicationDidFinishLaunching:withOptions:`, call `[Delight startWithAppToken:]` along with the app token obtained from step 1.
 
 Advanced Setup
 --------------
@@ -34,14 +36,14 @@ Call `[Delight pause]` / `[Delight resume]` to temporarily pause recording. To s
 
 ### Saving to Photo Album ###
 
-If you would like the video to be copied to the user's Photo Album after each recording, call `[Delight setSavesToPhotoAlbum:YES]`. By default the video is not copied. 
+If you would like the video to be copied to the user's Photo Album after each recording, call `[Delight setSavesToPhotoAlbum:YES]`. By default the video is not copied.
 
 Private Views
 -------------
 
 ### Registering / Unregistering ###
 
-You may not want to record certain views, such as password prompts. Call `[Delight registerPrivateView:description:]` with a view and a descriptive text to make a view private (will appear blacked out in the recording). You must call `[Delight unregisterPrivateView:]` before the view is deallocated. `[Delight privateViews]` will return an NSSet of all private views currently registered. 
+You may not want to record certain views, such as password prompts. Call `[Delight registerPrivateView:description:]` with a view and a descriptive text to make a view private (will appear blacked out in the recording). You must call `[Delight unregisterPrivateView:]` before the view is deallocated. `[Delight privateViews]` will return an NSSet of all private views currently registered.
 
 ### Hiding the Keyboard ###
 
@@ -64,5 +66,7 @@ Troubleshooting
 * A: The hardware-accelerated audio decoder may be blocking the video encoder. Try setting the audio session category to AVAudioSessionCategoryAmbient to use software audio decoding instead: `[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:NULL];`
 
 * Q: Why is my video rotated 90º?
-* A: The screen capturing operates at a window level rather than a view controller level. Windows in iOS are always in portrait mode; the view controllers take care of rotation. If your app is in landscape mode the video will therefore appear rotated.
+* A: The screen capturing operates at a window level rather than a view controller level. Windows in iOS are always in portrait mode; the view controllers take care of rotation. If your app is in landscape mode the video will therefore appear rotated. You can use the rotation control in the video player to rotate during playback.
 
+* Q: How can I reach you for help and feedback?
+* A: We would love to hear from you. Please tweet us [@delightio](http://twitter.com/delightio) or email us [feedback@delight.io](mailto:feedback@delight.io)
