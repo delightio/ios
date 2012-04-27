@@ -62,11 +62,14 @@ Log in to your control panel at [delight.io](http://delight.io) to view your rec
 Troubleshooting
 ---------------
 
-* Q: Why do I get "Error creating pixel buffer:  status=-6661, pixelBufferPool=0x0"?
-* A: The hardware-accelerated audio decoder may be blocking the video encoder. Try setting the audio session category to AVAudioSessionCategoryAmbient to use software audio decoding instead: `[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:NULL];`
+* **Q**: Why do I get "Error creating pixel buffer:  status=-6661, pixelBufferPool=0x0"?
 
-* Q: Why is my video rotated 90º?
-* A: The screen capturing operates at a window level rather than a view controller level. Windows in iOS are always in portrait mode; the view controllers take care of rotation. If your app is in landscape mode the video will therefore appear rotated. You can use the rotation control in the video player to rotate during playback.
+  **A**: The hardware-accelerated audio decoder may be blocking the video encoder. Try setting the audio session category to AVAudioSessionCategoryAmbient to use software audio decoding instead: `[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:NULL];`
 
-* Q: How can I reach you for help and feedback?
-* A: We would love to hear from you. Please tweet us [@delightio](http://twitter.com/delightio) or email us [feedback@delight.io](mailto:feedback@delight.io)
+* **Q**: Why is my video rotated 90º?
+
+  **A**: The screen capturing operates at a window level rather than a view controller level. Windows in iOS are always in portrait mode; the view controllers take care of rotation. If your app is in landscape mode the video will therefore appear rotated. You can use the rotation control in the video player to rotate during playback.
+
+* **Q**: How can I reach you for help and feedback?
+
+  **A**: We would love to hear from you. Please tweet us [@delightio](http://twitter.com/delightio) or email us [feedback@delight.io](mailto:feedback@delight.io)
