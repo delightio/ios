@@ -4,7 +4,7 @@ Delight IO
 Basic Setup
 -----------
 
-1. Sign up on [htpp://delight.io](http://delight.io) to receive your app token
+1. Sign up on [http://delight.io](http://delight.io) to receive your app token
 
 2. Add Delight.framework to your target. Also make sure the following frameworks are linked:
     * AVFoundation
@@ -57,7 +57,7 @@ Currently delight.io only supports UIKit apps. OpenGL ES support is in the works
 Viewing Recordings
 ------------------
 
-Log in to your control panel at [delight.io](http://delight.io) to view your recordings. If you have turned on [saving to Photo Album](#saving-to-photo-album) you may also view recordings by launching the Photos app on the device.
+Log in to your control panel at [delight.io](http://delight.io) to view your recordings. You can filter your recordings by version and build, as defined in your application's Info.plist file. If you have turned on [saving to Photo Album](#saving-to-photo-album) you may also view recordings by launching the Photos app on the device.
 
 Troubleshooting
 ---------------
