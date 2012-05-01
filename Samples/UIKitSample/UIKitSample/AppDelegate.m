@@ -33,7 +33,7 @@
     window.rootViewController = navigationController;
     [window makeKeyAndVisible];
 
-    [Delight startWithAppToken:@"e48c1d2e718ad510ca93512714"];
+    [Delight startWithAppToken:@"Get your token at http://delight.io"];
 
     return YES;
 }
