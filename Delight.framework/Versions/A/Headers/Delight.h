@@ -10,12 +10,12 @@
 #import <OpenGLES/EAGL.h>
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
-#import "DLScreenshotController.h"
-#import "DLVideoEncoder.h"
-#import "DLGestureTracker.h"
 
 @class DLTaskController;
 @class DLRecordingContext;
+@class DLScreenshotController;
+@class DLVideoEncoder;
+@class DLGestureTracker;
 
 @protocol DLRecordingSessionDelegate <NSObject>
 
@@ -24,7 +24,7 @@
 
 @end
 
-@interface Delight : NSObject <DLGestureTrackerDelegate, DLRecordingSessionDelegate> {
+@interface Delight : NSObject <DLRecordingSessionDelegate> {
     BOOL processing;
     NSUInteger frameCount;
     NSTimeInterval elapsedTime;
@@ -34,6 +34,7 @@
     
 	DLTaskController * taskController;
 	DLRecordingContext * recordingContext;
+    NSLock * lock;
 }
 
 @property (nonatomic, retain) NSString *appToken;
