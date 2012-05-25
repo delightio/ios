@@ -7,6 +7,7 @@
 
 #import "AccountsViewController.h"
 #import "Account.h"
+#import <Delight/Delight.h>
 
 @implementation AccountsViewController
 
@@ -50,7 +51,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return YES;
 }
 
 - (void)addAccount:(id)sender
@@ -91,11 +92,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    Account *selectedAccount = [accounts objectAtIndex:indexPath.row];
+    
     ViewAccountViewController *viewAccountViewController = [[ViewAccountViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    viewAccountViewController.account = [accounts objectAtIndex:indexPath.row];
+    viewAccountViewController.account = selectedAccount;
     viewAccountViewController.delegate = self;
     [self.navigationController pushViewController:viewAccountViewController animated:YES];
     [viewAccountViewController release];
+    
+    [Delight setPropertyValue:selectedAccount.name forKey:@"last_account_viewed"];
 }
 
 #pragma mark - AddAccountViewControllerDelegate
@@ -107,6 +112,8 @@
     [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[accounts count] - 1 inSection:0]
                           atScrollPosition:UITableViewScrollPositionBottom
                                   animated:YES];
+    
+    [Delight setPropertyValue:[NSNumber numberWithUnsignedInteger:[accounts count]] forKey:@"account_count"];
 }
 
 #pragma mark - ViewAccountViewControllerDelegate
@@ -115,6 +122,8 @@
 {
     [accounts removeObject:account];
     [self.tableView reloadData];
+    
+    [Delight setPropertyValue:[NSNumber numberWithUnsignedInteger:[accounts count]] forKey:@"account_count"];
 }
 
 @end

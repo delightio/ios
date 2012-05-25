@@ -4,9 +4,10 @@ Delight IO
 Basic Setup
 -----------
 
-1. Sign up on [http://delight.io](http://delight.io) to receive your app token
+1. Sign up on [http://delight.io](http://delight.io) to receive your app token.
 
 2. Add Delight.framework to your target. Also make sure the following frameworks are linked:
+    * AssetsLibrary
     * AVFoundation
     * CoreGraphics
     * CoreMedia
@@ -22,21 +23,23 @@ Basic Setup
 Advanced Setup
 --------------
 
-### Scale Factor ###
+### Stopping the Recording ###
 
-By default, recordings will be at 50% scale for iPhones and non-Retina iPads, and 25% scale for Retina iPads. These numbers were chosen to strike a balance between recording quality, performance and upload time. To record at a different scale, call `[Delight setScaleFactor:]` before `[Delight startWithAppToken:]`. The scale factor is a number between 0 and 1, for example 0.5 for 50% scale.
+By default, recording will stop when the user presses the device's home button or after 10 minutes, whichever comes first. To stop recording earlier, call `[Delight stop]`. 
 
-### Frame Rate ###
-
-The frame rate will auto-adjust to become as high as possible. This may use up a lot of CPU, so you may want to reduce the frame rate to limit the effect on your app. To do so, call `[Delight setMaximumFrameRate:]` with the new maximum frame rate (in frames per second). You may need to experiment to find the right value. By default the maximum frame rate is 30 fps.
-
-### Recording Control ###
-
-Call `[Delight pause]` / `[Delight resume]` to temporarily pause recording. To stop recording altogether, call `[Delight stop]`.
+After a recording has been stopped, it is not possible to restart it again in that session.
 
 ### Saving to Photo Album ###
 
 If you would like the video to be copied to the user's Photo Album after each recording, call `[Delight setSavesToPhotoAlbum:YES]`. By default the video is not copied.
+
+### Properties ###
+
+You can attach arbitrary metadata to recordings by calling `[Delight setPropertyValue:forKey:]`. The value must be either an NSString or NSNumber. In the control panel, it is possible to filter recordings by property.
+
+### Debug Log ###
+
+By default, debug log statements from the delight.io framework are suppressed. To turn them on, call `[Delight setDebugLogEnabled:YES]`.
 
 Private Views
 -------------
@@ -45,9 +48,11 @@ Private Views
 
 You may not want to record certain views, such as password prompts. Call `[Delight registerPrivateView:description:]` with a view and a descriptive text to make a view private (will appear blacked out in the recording). You must call `[Delight unregisterPrivateView:]` before the view is deallocated. `[Delight privateViews]` will return an NSSet of all private views currently registered.
 
+Note that UITextFields with the secureTextEntry property set to true are automatically registered as private views.
+
 ### Hiding the Keyboard ###
 
-To allow/prevent the keyboard from being recorded, call `[Delight setHidesKeyboardInRecording:]`. When set to YES, the keyboard area will be covered up by a grey box in the recording and keystroke gestures will not be drawn. By default, the keyboard is shown in the recording.
+To allow/prevent the keyboard from being recorded, call `[Delight setHidesKeyboardInRecording:]`. When set to YES, the keyboard area will be covered up by a grey box in the recording and keystroke gestures will not be drawn. By default, the keyboard is shown in the recording, except for when the user is entering text into a secure UITextField.
 
 OpenGL ES Support
 -----------------

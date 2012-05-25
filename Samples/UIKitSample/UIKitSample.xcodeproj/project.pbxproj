@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83074F35156F0E8C001E55AB /* Delight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83074F34156F0E8C001E55AB /* Delight.framework */; };
 		837C3A3A153F870600463CB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C3A39153F870600463CB3 /* UIKit.framework */; };
 		837C3A3C153F870600463CB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C3A3B153F870600463CB3 /* Foundation.framework */; };
 		837C3A3E153F870600463CB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C3A3D153F870600463CB3 /* CoreGraphics.framework */; };
@@ -17,16 +18,21 @@
 		837C3A5B153F875400463CB3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C3A57153F875400463CB3 /* CoreVideo.framework */; };
 		837C3A5C153F875400463CB3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C3A58153F875400463CB3 /* OpenGLES.framework */; };
 		837C3A5D153F875400463CB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C3A59153F875400463CB3 /* QuartzCore.framework */; };
-		837C3A5F153F876300463CB3 /* Delight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C3A5E153F876300463CB3 /* Delight.framework */; };
 		837C3A6C153F92D600463CB3 /* AddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C3A6B153F92D600463CB3 /* AddAccountViewController.m */; };
 		8381FFF51540972A0051F33A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8381FFF41540972A0051F33A /* CoreMedia.framework */; };
+		838292A415584DF1007C6CDA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838292A315584DF1007C6CDA /* AssetsLibrary.framework */; };
 		838380CF1541EDA000C20B8A /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838380CE1541EDA000C20B8A /* AccountsViewController.m */; };
 		838380D31541EDF400C20B8A /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 838380D21541EDF400C20B8A /* Account.m */; };
 		838380D61542260700C20B8A /* ViewAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838380D51542260700C20B8A /* ViewAccountViewController.m */; };
+		838694E6156EC84400EBDB14 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694E2156EC84400EBDB14 /* icon.png */; };
+		838694E7156EC84400EBDB14 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694E3156EC84400EBDB14 /* icon@2x.png */; };
+		838694E8156EC84400EBDB14 /* icon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694E4156EC84400EBDB14 /* icon@2x~ipad.png */; };
+		838694E9156EC84400EBDB14 /* icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694E5156EC84400EBDB14 /* icon~ipad.png */; };
 		838897091545FABE00FCE2D5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838897081545FABE00FCE2D5 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83074F34156F0E8C001E55AB /* Delight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Delight.framework; path = ../../Delight.framework; sourceTree = "<group>"; };
 		837C3A35153F870600463CB3 /* UIKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837C3A39153F870600463CB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		837C3A3B153F870600463CB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,16 +47,20 @@
 		837C3A57153F875400463CB3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		837C3A58153F875400463CB3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		837C3A59153F875400463CB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		837C3A5E153F876300463CB3 /* Delight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Delight.framework; path = ../../Delight.framework; sourceTree = "<group>"; };
 		837C3A6A153F92D600463CB3 /* AddAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAccountViewController.h; sourceTree = "<group>"; };
 		837C3A6B153F92D600463CB3 /* AddAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAccountViewController.m; sourceTree = "<group>"; };
 		8381FFF41540972A0051F33A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		838292A315584DF1007C6CDA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		838380CD1541EDA000C20B8A /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
 		838380CE1541EDA000C20B8A /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
 		838380D11541EDF400C20B8A /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		838380D21541EDF400C20B8A /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		838380D41542260700C20B8A /* ViewAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAccountViewController.h; sourceTree = "<group>"; };
 		838380D51542260700C20B8A /* ViewAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAccountViewController.m; sourceTree = "<group>"; };
+		838694E2156EC84400EBDB14 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		838694E3156EC84400EBDB14 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		838694E4156EC84400EBDB14 /* icon@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x~ipad.png"; sourceTree = "<group>"; };
+		838694E5156EC84400EBDB14 /* icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon~ipad.png"; sourceTree = "<group>"; };
 		838897081545FABE00FCE2D5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -59,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838292A415584DF1007C6CDA /* AssetsLibrary.framework in Frameworks */,
 				838897091545FABE00FCE2D5 /* SystemConfiguration.framework in Frameworks */,
-				837C3A5F153F876300463CB3 /* Delight.framework in Frameworks */,
 				8381FFF51540972A0051F33A /* CoreMedia.framework in Frameworks */,
 				837C3A5B153F875400463CB3 /* CoreVideo.framework in Frameworks */,
 				837C3A5A153F875400463CB3 /* AVFoundation.framework in Frameworks */,
@@ -69,6 +79,7 @@
 				837C3A3E153F870600463CB3 /* CoreGraphics.framework in Frameworks */,
 				837C3A3A153F870600463CB3 /* UIKit.framework in Frameworks */,
 				837C3A3C153F870600463CB3 /* Foundation.framework in Frameworks */,
+				83074F35156F0E8C001E55AB /* Delight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +106,8 @@
 		837C3A38153F870600463CB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				837C3A5E153F876300463CB3 /* Delight.framework */,
+				83074F34156F0E8C001E55AB /* Delight.framework */,
+				838292A315584DF1007C6CDA /* AssetsLibrary.framework */,
 				838897081545FABE00FCE2D5 /* SystemConfiguration.framework */,
 				8381FFF41540972A0051F33A /* CoreMedia.framework */,
 				837C3A57153F875400463CB3 /* CoreVideo.framework */,
@@ -134,6 +146,10 @@
 				837C3A42153F870600463CB3 /* InfoPlist.strings */,
 				837C3A45153F870600463CB3 /* main.m */,
 				837C3A47153F870600463CB3 /* UIKitSample-Prefix.pch */,
+				838694E2156EC84400EBDB14 /* icon.png */,
+				838694E3156EC84400EBDB14 /* icon@2x.png */,
+				838694E4156EC84400EBDB14 /* icon@2x~ipad.png */,
+				838694E5156EC84400EBDB14 /* icon~ipad.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -190,6 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				837C3A44153F870600463CB3 /* InfoPlist.strings in Resources */,
+				838694E6156EC84400EBDB14 /* icon.png in Resources */,
+				838694E7156EC84400EBDB14 /* icon@2x.png in Resources */,
+				838694E8156EC84400EBDB14 /* icon@2x~ipad.png in Resources */,
+				838694E9156EC84400EBDB14 /* icon~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +298,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIKitSample/UIKitSample-Prefix.pch";
 				INFOPLIST_FILE = "UIKitSample/UIKitSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -295,7 +315,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIKitSample/UIKitSample-Prefix.pch";
 				INFOPLIST_FILE = "UIKitSample/UIKitSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
