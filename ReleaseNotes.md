@@ -2,6 +2,15 @@ delight.io Release Notes
 ========================
 ___
 
+2.0.2
+=====
+---
+
+Changelog
+---------
+
+* Fixed an issue where private views would be hidden too early.
+
 2.0.1
 =====
 ---
