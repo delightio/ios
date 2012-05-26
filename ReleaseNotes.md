@@ -2,6 +2,14 @@ delight.io Release Notes
 ========================
 ___
 
+2.0.1
+=====
+
+Changelog
+---------
+
+* Fixed an issue where the application would terminate after being in the background for a while.
+
 2.0
 ===
 ___
