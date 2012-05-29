@@ -33,6 +33,7 @@
     window.rootViewController = navigationController;
     [window makeKeyAndVisible];
 
+    [Delight setDebugLogEnabled:YES];
     [Delight startWithAppToken:@"Get your token at http://delight.io"];
 
     return YES;

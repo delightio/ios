@@ -7,7 +7,6 @@
 
 #import "AddAccountViewController.h"
 #import "Account.h"
-#import <Delight/Delight.h>
 
 @interface AddAccountViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
