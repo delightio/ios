@@ -2,21 +2,21 @@ delight.io Release Notes
 ========================
 ___
 
-2.0.2
+2.0.3
 =====
 ---
 
-Changelog
----------
+* Fixed a crash that occurred when unregistering a UIWebView as a private view.
+
+2.0.2
+=====
+---
 
 * Fixed an issue where private views would be hidden too early.
 
 2.0.1
 =====
 ---
-
-Changelog
----------
 
 * Fixed an issue where the application would terminate after being in the background for a while.
 
