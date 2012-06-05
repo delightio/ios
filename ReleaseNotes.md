@@ -2,6 +2,12 @@ delight.io Release Notes
 ========================
 ___
 
+2.0.4
+=====
+---
+
+* Make private views flash when tapped.
+
 2.0.3
 =====
 ---
