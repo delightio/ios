@@ -2,6 +2,12 @@ delight.io Release Notes
 ========================
 ___
 
+2.0.5
+=====
+---
+
+* Minor bug fixes.
+
 2.0.4
 =====
 ---
