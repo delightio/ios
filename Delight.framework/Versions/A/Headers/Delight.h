@@ -21,6 +21,7 @@
 /** Starts capturing the screen and recording gestures. The recording will automatically end after 10 minutes, or if the app is sent to the background, or if `stop` is called. A new recording will be started whenever the app is brought to the foreground. Recordings only take place if you have scheduled recordings in your [control panel](http://delight.io/apps), and recordings are not paused.
  
  @warning This method should only be called once, typically in your application delegate's `applicationDidFinishLaunching:withOptions:` method.
+ @warning If your app uses OpenGL ES, do not use this method. Use `startOpenGLWithAppToken:` instead.
  @see stop
  @param appToken The application token from your [control panel](http://delight.io/apps).
  */
@@ -30,6 +31,35 @@
  @warning It is not possible to manually resume recording by calling `startWithAppToken:` again. A new recording will begin once the app has been sent to the background and then brought back to the foreground.
  */
 + (void)stop;
+
+/**---------------------------------------------------------------------------------------
+ * @name OpenGL ES Recording
+ * ---------------------------------------------------------------------------------------
+ */
+
+/** Starts capturing the screen and recording gestures for OpenGL ES-based apps. You must also call either `takeOpenGLScreenshot:` or `takeOpenGLScreenshot:colorRenderbuffer:` inside your render loop, just before calling `-[EAGLContext presentRenderbuffer:]`.
+
+ @see startWithAppToken:
+ @param appToken The application token from your [control panel](http://delight.io/apps).
+ */
++ (void)startOpenGLWithAppToken:(NSString *)appToken;
+
+/** Writes the framebuffer pixel data to the recording. Call this method after drawing and before `-[EAGLContext presentRenderbuffer:]`. If you have multiple renderbuffers, use `takeOpenGLScreenshot:colorRenderbuffer:` instead.
+ 
+ @see startOpenGLWithAppToken:
+ @see takeOpenGLScreenshot:colorRenderbuffer:
+ @param glView The OpenGL ES view.
+ */
++ (void)takeOpenGLScreenshot:(UIView *)glView;
+
+/** Writes the framebuffer pixel data to the recording. Call this method after drawing and before `-[EAGLContext presentRenderbuffer:]`. If your application creates only a single color renderbuffer which is already bound, you may use `takeOpenGLScreenshot:` instead.
+ 
+ @see startOpenGLWithAppToken:
+ @see takeOpenGLScreenshot:
+ @param glView The OpenGL ES view.
+ @param colorRenderbuffer The color renderbuffer object used to render the OpenGL ES view.
+ */
++ (void)takeOpenGLScreenshot:(UIView *)glView colorRenderbuffer:(GLuint)colorRenderbuffer;
 
 /**---------------------------------------------------------------------------------------
  * @name Adding Metadata

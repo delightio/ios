@@ -1,6 +1,12 @@
-delight.io Release Notes
-========================
+Delight Release Notes
+=====================
 ___
+
+2.1
+===
+---
+
+* Added OpenGL ES support.
 
 2.0.5
 =====
@@ -36,7 +42,7 @@ ___
 ===
 ___
 
-delight.io 2.0 contains several API changes, performance improvements, and bug fixes. Users running previous versions of the framework must upgrade to version 2.0; otherwise, new sessions will not be recorded, regardless of whether recordings have been scheduled.
+Delight 2.0 contains several API changes, performance improvements, and bug fixes. Users running previous versions of the framework must upgrade to version 2.0; otherwise, new sessions will not be recorded, regardless of whether recordings have been scheduled.
 
 Important Notes
 ---------------

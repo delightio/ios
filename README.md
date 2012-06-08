@@ -41,6 +41,11 @@ You can attach arbitrary metadata to recordings by calling `[Delight setProperty
 
 By default, debug log statements from the delight.io framework are suppressed. To turn them on, call `[Delight setDebugLogEnabled:YES]`.
 
+OpenGL ES
+---------
+
+To record applications that use OpenGL ES, call `[Delight startOpenGLWithAppToken:]` instead of `[Delight startWithAppToken:]`. You must also call either `[Delight takeOpenGLScreenshot:]` or `[Delight takeOpenGLScreenshot:colorRenderbuffer:]` inside your render loop (after drawing but before `-[EAGLContext presentRenderbuffer:]`).
+
 Private Views
 -------------
 
@@ -63,6 +68,11 @@ Viewing Recordings
 ------------------
 
 Log in to your control panel at [delight.io](http://delight.io) to view your recordings. You can filter your recordings by version and build, as defined in your application's Info.plist file. If you have turned on [saving to Photo Album](#saving-to-photo-album) you may also view recordings by launching the Photos app on the device.
+
+App Development Frameworks
+--------------------------
+
+It is possible to integrate Delight with certain app development frameworks such as PhoneGap and Clutch.io. Please refer to the [developer documentation](http://delight.io/docs) for more information.
 
 Troubleshooting
 ---------------
