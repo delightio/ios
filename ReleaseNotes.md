@@ -2,6 +2,12 @@ Delight Release Notes
 =====================
 ___
 
+2.1.1
+=====
+---
+
+* Fixed a bug where gestures would not be drawn if Delight was started before a window had been added.
+
 2.1
 ===
 ---
