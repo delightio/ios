@@ -2,6 +2,13 @@ Delight Release Notes
 =====================
 ___
 
+2.1.2
+=====
+---
+
+* Fixed a crash that occurred when capturing a UIWebView.
+* Fixed a bug relating to resuming partial uploads.
+
 2.1.1
 =====
 ---
