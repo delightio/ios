@@ -2,6 +2,13 @@ Delight Release Notes
 =====================
 ___
 
+2.1.3
+=====
+---
+
+* Improved OpenGL performance.
+* Improved stability when recording UIWebViews.
+
 2.1.2
 =====
 ---
