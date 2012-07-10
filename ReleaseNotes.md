@@ -2,6 +2,13 @@ Delight Release Notes
 =====================
 ___
 
+2.2
+===
+---
+
+* Added DelightPrivate.framework, a special version of Delight that uses private API calls for high performance.
+* Removed OpenGL support from Delight.framework (use DelightPrivate.framework instead).
+
 2.1.3
 =====
 ---

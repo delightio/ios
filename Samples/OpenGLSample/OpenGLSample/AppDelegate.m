@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 #import "TeapotViewController.h"
-#import <Delight/Delight.h>
+#import <DelightPrivate/Delight.h>
 
 @implementation AppDelegate
 
@@ -30,7 +30,7 @@
     [self.window makeKeyAndVisible];
 
     [Delight setDebugLogEnabled:YES];
-    [Delight startOpenGLWithAppToken:@"Get your token at http://delight.io"];
+    [Delight startWithAppToken:@"Get your token at http://delight.io"];
     
     return YES;
 }

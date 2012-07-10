@@ -9,17 +9,16 @@
 /* Begin PBXBuildFile section */
 		837C3A24153F7DEB00463CB3 /* TeapotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C3A23153F7DEB00463CB3 /* TeapotViewController.m */; };
 		837C3A29153F804900463CB3 /* TeapotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C3A28153F7EC100463CB3 /* TeapotView.m */; };
+		837D9D0E15ACE6E600704989 /* DelightPrivate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837D9D0D15ACE6E600704989 /* DelightPrivate.framework */; };
 		8383861615549A6000A83AE9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8383861415549A6000A83AE9 /* AssetsLibrary.framework */; };
 		8383861715549A6000A83AE9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8383861515549A6000A83AE9 /* SystemConfiguration.framework */; };
 		838694F8156ECA1700EBDB14 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694F4156ECA1700EBDB14 /* icon.png */; };
 		838694F9156ECA1700EBDB14 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694F5156ECA1700EBDB14 /* icon@2x.png */; };
 		838694FA156ECA1700EBDB14 /* icon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694F6156ECA1700EBDB14 /* icon@2x~ipad.png */; };
 		838694FB156ECA1700EBDB14 /* icon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694F7156ECA1700EBDB14 /* icon~ipad.png */; };
-		83C6CD20158178DF0038FD74 /* Delight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C6CD1F158178DF0038FD74 /* Delight.framework */; };
 		83F73EEF153E31B40094BD16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F73EEE153E31B40094BD16 /* UIKit.framework */; };
 		83F73EF1153E31B40094BD16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F73EF0153E31B40094BD16 /* Foundation.framework */; };
 		83F73EF3153E31B40094BD16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F73EF2153E31B40094BD16 /* CoreGraphics.framework */; };
-		83F73EF5153E31B40094BD16 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F73EF4153E31B40094BD16 /* GLKit.framework */; };
 		83F73EF7153E31B40094BD16 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F73EF6153E31B40094BD16 /* OpenGLES.framework */; };
 		83F73EFD153E31B40094BD16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83F73EFB153E31B40094BD16 /* InfoPlist.strings */; };
 		83F73EFF153E31B40094BD16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F73EFE153E31B40094BD16 /* main.m */; };
@@ -36,18 +35,17 @@
 		837C3A25153F7E6A00463CB3 /* teapot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = teapot.h; sourceTree = "<group>"; };
 		837C3A27153F7EC000463CB3 /* TeapotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeapotView.h; sourceTree = "<group>"; };
 		837C3A28153F7EC100463CB3 /* TeapotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeapotView.m; sourceTree = "<group>"; };
+		837D9D0D15ACE6E600704989 /* DelightPrivate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DelightPrivate.framework; path = ../../DelightPrivate.framework; sourceTree = "<group>"; };
 		8383861415549A6000A83AE9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8383861515549A6000A83AE9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		838694F4156ECA1700EBDB14 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		838694F5156ECA1700EBDB14 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		838694F6156ECA1700EBDB14 /* icon@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x~ipad.png"; sourceTree = "<group>"; };
 		838694F7156ECA1700EBDB14 /* icon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon~ipad.png"; sourceTree = "<group>"; };
-		83C6CD1F158178DF0038FD74 /* Delight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Delight.framework; path = ../../Delight.framework; sourceTree = "<group>"; };
 		83F73EEA153E31B40094BD16 /* OpenGLSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F73EEE153E31B40094BD16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		83F73EF0153E31B40094BD16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		83F73EF2153E31B40094BD16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		83F73EF4153E31B40094BD16 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		83F73EF6153E31B40094BD16 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		83F73EFA153E31B40094BD16 /* OpenGLSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenGLSample-Info.plist"; sourceTree = "<group>"; };
 		83F73EFC153E31B40094BD16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -75,9 +73,8 @@
 				83F73EEF153E31B40094BD16 /* UIKit.framework in Frameworks */,
 				83F73EF1153E31B40094BD16 /* Foundation.framework in Frameworks */,
 				83F73EF3153E31B40094BD16 /* CoreGraphics.framework in Frameworks */,
-				83F73EF5153E31B40094BD16 /* GLKit.framework in Frameworks */,
 				83F73EF7153E31B40094BD16 /* OpenGLES.framework in Frameworks */,
-				83C6CD20158178DF0038FD74 /* Delight.framework in Frameworks */,
+				837D9D0E15ACE6E600704989 /* DelightPrivate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +109,7 @@
 		83F73EED153E31B40094BD16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83C6CD1F158178DF0038FD74 /* Delight.framework */,
+				837D9D0D15ACE6E600704989 /* DelightPrivate.framework */,
 				8383861515549A6000A83AE9 /* SystemConfiguration.framework */,
 				8383861415549A6000A83AE9 /* AssetsLibrary.framework */,
 				83F73F1D153E32BF0094BD16 /* AVFoundation.framework */,
@@ -122,7 +119,6 @@
 				83F73EEE153E31B40094BD16 /* UIKit.framework */,
 				83F73EF0153E31B40094BD16 /* Foundation.framework */,
 				83F73EF2153E31B40094BD16 /* CoreGraphics.framework */,
-				83F73EF4153E31B40094BD16 /* GLKit.framework */,
 				83F73EF6153E31B40094BD16 /* OpenGLES.framework */,
 			);
 			name = Frameworks;
@@ -301,7 +297,7 @@
 				GCC_PREFIX_HEADER = "OpenGLSample/OpenGLSample-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "OpenGLSample/OpenGLSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -319,7 +315,7 @@
 				GCC_PREFIX_HEADER = "OpenGLSample/OpenGLSample-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "OpenGLSample/OpenGLSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

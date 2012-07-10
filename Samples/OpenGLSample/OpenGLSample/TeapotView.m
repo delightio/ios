@@ -7,7 +7,6 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import <OpenGLES/EAGLDrawable.h>
-#import <Delight/Delight.h>
 #import "TeapotView.h"
 #import "teapot.h"
 
@@ -144,11 +143,6 @@
 	}
  
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
-    
-    /******************************
-     * Delight code inserted here *
-     ******************************/
-    [Delight takeOpenGLScreenshot:self];
     
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
 }
