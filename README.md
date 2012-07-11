@@ -27,10 +27,6 @@ By default, recording will stop when the user presses the device's home button o
 
 After a recording has been stopped, it is not possible to restart it again in that session.
 
-### Saving to Photo Album ###
-
-If you would like the video to be copied to the user's Photo Album after each recording, call `[Delight setSavesToPhotoAlbum:YES]`. By default the video is not copied.
-
 ### Properties ###
 
 You can attach arbitrary metadata to recordings by calling `[Delight setPropertyValue:forKey:]`. The value must be either an NSString or NSNumber. In the control panel, it is possible to filter recordings by property.
