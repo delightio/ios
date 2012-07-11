@@ -10,7 +10,6 @@
 		837C3A24153F7DEB00463CB3 /* TeapotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C3A23153F7DEB00463CB3 /* TeapotViewController.m */; };
 		837C3A29153F804900463CB3 /* TeapotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 837C3A28153F7EC100463CB3 /* TeapotView.m */; };
 		837D9D0E15ACE6E600704989 /* DelightPrivate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837D9D0D15ACE6E600704989 /* DelightPrivate.framework */; };
-		8383861615549A6000A83AE9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8383861415549A6000A83AE9 /* AssetsLibrary.framework */; };
 		8383861715549A6000A83AE9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8383861515549A6000A83AE9 /* SystemConfiguration.framework */; };
 		838694F8156ECA1700EBDB14 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694F4156ECA1700EBDB14 /* icon.png */; };
 		838694F9156ECA1700EBDB14 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 838694F5156ECA1700EBDB14 /* icon@2x.png */; };
@@ -36,7 +35,6 @@
 		837C3A27153F7EC000463CB3 /* TeapotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeapotView.h; sourceTree = "<group>"; };
 		837C3A28153F7EC100463CB3 /* TeapotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeapotView.m; sourceTree = "<group>"; };
 		837D9D0D15ACE6E600704989 /* DelightPrivate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DelightPrivate.framework; path = ../../DelightPrivate.framework; sourceTree = "<group>"; };
-		8383861415549A6000A83AE9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		8383861515549A6000A83AE9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		838694F4156ECA1700EBDB14 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		838694F5156ECA1700EBDB14 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8383861615549A6000A83AE9 /* AssetsLibrary.framework in Frameworks */,
 				8383861715549A6000A83AE9 /* SystemConfiguration.framework in Frameworks */,
 				83F73F21153E32BF0094BD16 /* AVFoundation.framework in Frameworks */,
 				83F73F22153E32BF0094BD16 /* CoreMedia.framework in Frameworks */,
@@ -111,7 +108,6 @@
 			children = (
 				837D9D0D15ACE6E600704989 /* DelightPrivate.framework */,
 				8383861515549A6000A83AE9 /* SystemConfiguration.framework */,
-				8383861415549A6000A83AE9 /* AssetsLibrary.framework */,
 				83F73F1D153E32BF0094BD16 /* AVFoundation.framework */,
 				83F73F1E153E32BF0094BD16 /* CoreMedia.framework */,
 				83F73F1F153E32BF0094BD16 /* CoreVideo.framework */,

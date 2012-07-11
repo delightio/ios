@@ -106,16 +106,4 @@
  */
 + (BOOL)debugLogEnabled;
 
-/** Sets whether recordings are saved to the user's photo album, accessible via the Photos app.
- 
- @param savesToPhotoAlbum YES if recordings are to be saved to the user's photo album; otherwise, NO.
- */
-+ (void)setSavesToPhotoAlbum:(BOOL)savesToPhotoAlbum;
-
-/** Returns a Boolean value indicating whether recordings are saved to the user's photo album, accessible via the Photos app.
- 
- @return YES if recordings are saved to the user's photo album; otherwise, NO.
- */
-+ (BOOL)savesToPhotoAlbum;
-
 @end

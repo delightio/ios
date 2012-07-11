@@ -2,6 +2,13 @@ Delight Release Notes
 =====================
 ___
 
+2.2.1
+=====
+---
+
+* Removed dependencies on AssetsLibrary and OpenGLES.
+* Removed savesToPhotoAlbum property.
+
 2.2
 ===
 ---

@@ -7,12 +7,10 @@ Basic Setup
 1. Sign up on [http://delight.io](http://delight.io) to receive your app token.
 
 2. Add Delight.framework to your target. Also make sure the following frameworks are linked:
-    * AssetsLibrary
     * AVFoundation
     * CoreGraphics
     * CoreMedia
     * CoreVideo
-    * OpenGLES
     * QuartzCore
     * SystemConfiguration
 
