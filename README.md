@@ -58,7 +58,7 @@ To allow/prevent the keyboard from being recorded, call `[Delight setHidesKeyboa
 Viewing Recordings
 ------------------
 
-Log in to your control panel at [delight.io](http://delight.io) to view your recordings. You can filter your recordings by version and build, as defined in your application's Info.plist file. If you have turned on [saving to Photo Album](#saving-to-photo-album) you may also view recordings by launching the Photos app on the device.
+Log in to your control panel at [delight.io](http://delight.io) to view your recordings. You can filter your recordings by version and build, as defined in your application's Info.plist file.
 
 Troubleshooting
 ---------------
