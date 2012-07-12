@@ -2,6 +2,14 @@ Delight Release Notes
 =====================
 ___
 
+2.2.2
+=====
+---
+
+* Fixed crash when recording finished in DelightPrivate.framework.
+* Fixed an issue where private view contents would sometimes be shown when animated.
+* Fixed an issue where gesture dots were not positioned correctly.
+
 2.2.1
 =====
 ---

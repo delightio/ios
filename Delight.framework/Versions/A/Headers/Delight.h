@@ -51,7 +51,7 @@
   
  **Note**: The keyboard is automatically hidden in the recording whenever the user is editing a UITextField with `secureTextEntry` enabled.
  
- @param hidesKeyboardInRecording YES if debug log statements should be printed to the console; otherwise, NO.
+ @param hidesKeyboardInRecording YES if the on-screen keyboard will be covered up in the recording; otherwise, NO.
  */
 + (void)setHidesKeyboardInRecording:(BOOL)hidesKeyboardInRecording;
 
