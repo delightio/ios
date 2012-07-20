@@ -2,6 +2,13 @@ Delight Release Notes
 =====================
 ___
 
+2.3
+===
+---
+
+* Added annotation mode - now possible to record the front camera in addition to the screen.
+* Added uploadsAutomatically property, which can be used to turn on/off uploading of recordings.
+
 2.2.2
 =====
 ---

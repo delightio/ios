@@ -7,6 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    DLAnnotationNone,
+    DLAnnotationFrontVideoAndAudio
+} DLAnnotation;
+
 /** The `Delight` class is used to set up screen and gesture recording. Refer to the [QuickStart Guide](http://delight.io/docs) for installation instructions.
  
  The most important method is `startWithAppToken:`, which in most cases should be called as soon as possible after app launch, typically in your application delegate's `applicationDidFinishLaunching:withOptions:` method. 
@@ -18,13 +23,20 @@
  * ---------------------------------------------------------------------------------------
  */
 
-/** Starts capturing the screen and recording gestures. The recording will automatically end after 10 minutes, or if the app is sent to the background. A new recording will be started whenever the app is brought to the foreground. Recordings only take place if you have scheduled recordings in your [control panel](http://delight.io/apps), and recordings are not paused.
+/** Starts capturing the screen and recording gestures, with no annotation.
  
- @warning This method should only be called once, typically in your application delegate's `applicationDidFinishLaunching:withOptions:` method.
- @see stop
+ @see startWithAppToken:annotation:
  @param appToken The application token from your [control panel](http://delight.io/apps).
  */
 + (void)startWithAppToken:(NSString *)appToken;
+
+/** Starts capturing the screen and recording gestures. The recording will automatically end when the app is sent to the background. A new recording will be started whenever the app is brought to the foreground. Recordings only take place if you have scheduled recordings in your [control panel](http://delight.io/apps).
+ 
+ @warning This method should only be called once, typically in your application delegate's `applicationDidFinishLaunching:withOptions:` method.
+ @param appToken The application token from your [control panel](http://delight.io/apps).
+ @param annotation The type of annotation. Annotation can be used to capture the front camera, if supported by the device.
+ */
++ (void)startWithAppToken:(NSString *)appToken annotation:(DLAnnotation)annotation;
 
 /** Stops the current recording and all future recordings.
  */
@@ -88,6 +100,23 @@
  @return A set of all views that are currently private.
  */
 + (NSSet *)privateViews;
+
+/**---------------------------------------------------------------------------------------
+ * @name Controlling Uploads
+ * ---------------------------------------------------------------------------------------
+ */
+
+/** Sets whether the current recording should be automatically uploaded when the app gets sent to the background. By default, the recording will be uploaded. If this property is set to NO, the recording will not be uploaded.
+  
+ @param uploadsAutomatically YES if the current recording will be uploaded when the app gets sent to the background; otherwise, NO.
+ */
++ (void)setUploadsAutomatically:(BOOL)uploadsAutomatically;
+
+/** Returns a Boolean value indicating whether the current recording will be uploaded when the app gets sent to the background.
+ 
+ @return YES if the current recording will be uploaded when the app gets sent to the background; otherwise, NO.
+ */
++ (BOOL)uploadsAutomatically;
 
 /**---------------------------------------------------------------------------------------
  * @name Debugging

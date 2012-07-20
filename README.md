@@ -21,6 +21,10 @@ Basic Setup
 Advanced Setup
 --------------
 
+### Annotation ###
+
+An annotated session can be started by calling `[Delight startWithAppToken:annotation:]`. For example, to record the front-facing camera in addition to the screen, pass DLAnnotationFrontVideoAndAudio as the annotation parameter.
+
 ### Stopping the Recording ###
 
 By default, recording will stop when the user presses the device's home button or after 10 minutes, whichever comes first. To stop recording earlier, call `[Delight stop]`. 
