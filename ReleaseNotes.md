@@ -2,6 +2,12 @@ Delight Release Notes
 =====================
 ___
 
+2.3.1
+=====
+---
+
+* Fixed crash in unregisterPrivateView when the view had a refcount of 1.
+
 2.3
 ===
 ---
