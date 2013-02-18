@@ -2,6 +2,12 @@ Delight Release Notes
 =====================
 ___
 
+2.3.2
+=====
+---
+
+* Fixed crash in iOS 6.x.
+
 2.3.1
 =====
 ---
