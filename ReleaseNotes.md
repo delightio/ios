@@ -2,6 +2,12 @@ Delight Release Notes
 =====================
 ___
 
+2.3.3
+=====
+---
+
+* Workaround to fix crash with MKMapView #4. All MKMapViews will be blacked out but gestures will still be rendered on the view.
+
 2.3.2
 =====
 ---
