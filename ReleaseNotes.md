@@ -2,6 +2,14 @@ Delight Release Notes
 =====================
 ___
 
+3.0.b
+=====
+---
+
+* Replaced setPropertyValue with trackEvent:info: to tag recordings with event and specific info.
+* Removed uploadsAutomatically property
+
+
 2.3.3
 =====
 ---

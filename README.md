@@ -27,13 +27,13 @@ An annotated session can be started by calling `[Delight startWithAppToken:annot
 
 ### Stopping the Recording ###
 
-By default, recording will stop when the user presses the device's home button or after 10 minutes, whichever comes first. To stop recording earlier, call `[Delight stop]`. 
+By default, recording will stop when the user presses the device's home button or after 10 minutes, whichever comes first. To stop recording earlier, call `[Delight stop]`.
 
 After a recording has been stopped, it is not possible to restart it again in that session.
 
-### Properties ###
+### Tracking Events ###
 
-You can attach arbitrary metadata to recordings by calling `[Delight setPropertyValue:forKey:]`. The value must be either an NSString or NSNumber. In the control panel, it is possible to filter recordings by property.
+You can attach arbitrary events to recordings by calling `[Delight trackEvent:info:]`. Watch recordings of your user flows by selecting the specific events.
 
 ### Debug Log ###
 
